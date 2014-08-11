@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace QunitcodeTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest
     {
         [TestMethod]
         public void simpleTest()
