@@ -13,6 +13,7 @@
     <call target="CompileAll" />
     <call target="Execute Unit Tests"/>    
     <call target="Cleanup" />
+    <call target="QunitTest" />
     <!--<call target="Copy Files" />
     <call target="Zip" />-->
   </target>
@@ -62,6 +63,13 @@
         <include name="\**"/>        
       </fileset>
     </delete>
+  </target>
+
+  <target name="QunitTest">
+    <!-- Run javascript tests -->
+    <exec program="chutzpah.console.exe" basedir="${Build.SourcesDirectory}\Chutzpah.2.0.0\tools"
+          workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">      
+    </exec>
   </target>
 
 <!--  <target name="Zip">
