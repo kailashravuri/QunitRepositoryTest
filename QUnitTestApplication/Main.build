@@ -4,12 +4,12 @@
   <property name="UnitTestResultFilePath" value="C:\UnitTestResults\1.0.${NewBuildNumber}\results.trx"/>
   <property name="msTestPath" value="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\mstest.exe"/>
   <target name="Main Build">
-    <setinformationalversion productname="${productName}" newbuildnumber="${NewBuildNumber}">
+    <!--<setinformationalversion productname="${productName}" newbuildnumber="${NewBuildNumber}">
       <fileset basedir="${projectRootPath}\">
         <include name="**/AssemblyInfo.*"/>
         <exclude name="**/Shared/**"/>
       </fileset>
-    </setinformationalversion>
+    </setinformationalversion>-->
     <call target="CompileAll" />
     <call target="Execute Unit Tests"/>    
     <call target="Cleanup" />
