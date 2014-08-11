@@ -66,8 +66,8 @@
     </delete>
   </target>
 
-  <target name="QunitTest">
-    <!-- Run javascript tests -->
+  <!--<target name="QunitTest">
+    --><!-- Run javascript tests --><!--
     <exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah"
           workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">
       <arg value="/teamcity" />
@@ -75,5 +75,16 @@
       <arg value="/vsoutput" />
       <arg value="/junit C:/Temp/Results.xml" />
     </exec>
+  </target>-->
+  
+  <target name="QunitTest" description="execute all javascript unit tests for the solution">
+    <tstamp />    
+    <exec program="${chutzpahConsolePath}" workingdir="${jsTests}"/>
+    <arg value="/teamcity" />
+    <arg value="/debug" />
+    <arg value="/vsoutput" />
+    <arg value="/failOnError" />
+    <arg value="/junit C:/Temp/Results.xml" />
+    <tstamp />
   </target>
 </project>

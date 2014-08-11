@@ -13,7 +13,7 @@
   <property name="minorVersion" value="2"/>
   <property name="revisionVersion" value="0"/>
   <property name="projectRootPath" value="${directory::get-parent-directory(project::get-base-directory())}" dynamic="true"/>
-  <property name="BranchName" value="Unknown" overwrite="false"/>
+
 
   <!-- update the build number -->
   <property name="build.number" value="0" overwrite="false"/>
@@ -43,6 +43,8 @@
   <property name="msBuildExePath" value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"/>
   <property name="snPath" value="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\sn.exe"/>
   <property name="sqlCmd" value="C:\Program Files\Microsoft SQL Server\100\Tools\Binn\sqlcmd.exe" />
+  <property name ="chutzpahConsolePath" value ="C:\TeamCity\buildAgent\tools\Chutzpah\chutzpah.console.exe" />
+  <property name="jsTests" value="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
 
   <property name="CPUArchitecture" value="AnyCPU"/>
 
