@@ -27,9 +27,9 @@
   </target>
 
   <target name="Execute Unit Tests">
-    <fileset id="UnitTestAssemblies" basedir="${projectRootPath}">
+    <fileset id="UnitTestAssemblies" basedir="${ProjectCodePath}">
       <exclude name="**\obj\**\*" />
-      <include name="${projectRootPath}\**\bin\${build.configuration}\*.QunitcodeTest.dll" />
+      <include name="${ProjectCodePath}\**\bin\${build.configuration}\*.QunitcodeTest.dll" />
     </fileset>
     <foreach item="File" property="filename">
       <in>
@@ -52,7 +52,7 @@
   </target>
 
 
-  <target name="Upload and Cleanup">
+  <target name="Cleanup">
     <echo>Cleaning...</echo>
 
     <!-- from the parent folder down delete everything else
