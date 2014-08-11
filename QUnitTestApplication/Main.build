@@ -69,12 +69,12 @@
   <target name="QunitTest">
      <!--Run javascript tests--> 
     <exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah"
-          workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" commandline="/debug /vsoutput /teamcity">
+          workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" commandline="/debug /vsoutput /teamcity /discover">
       <arg value="/teamcity" />
       <arg value="/path ${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
       <arg value="/vsoutput" />
-      <arg value="/junit C:/Temp/Results.xml" />
-      <arg value="/debug" />
+      <arg value="/junit C:/Temp/Results.xml" />      
+      <arg value="/discover" />
       <arg value="/failOnError" />
     </exec>
   </target>
