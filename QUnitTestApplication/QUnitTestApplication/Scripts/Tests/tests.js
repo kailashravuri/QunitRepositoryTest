@@ -20,7 +20,7 @@ test("will say even number or not", function () {
 
 //Test 3
 module('General Function :');
-QUnit.test("Should return same message", function () {
+test("Should return same message", function () {
 
     var res = anotherFile("test");
 
@@ -30,7 +30,7 @@ QUnit.test("Should return same message", function () {
 
 // testing the complete values in an object
 module('Deep Equal testing')
-QUnit.test("Testing the deep equal object", function () {
+test("Testing the deep equal object", function () {
     var obj = { foo: "bar" };
     deepEqual(obj, checkDeepEqual(obj), "Two objects can be the same in value");
 });

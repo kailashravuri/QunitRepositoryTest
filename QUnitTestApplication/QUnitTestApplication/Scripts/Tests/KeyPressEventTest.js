@@ -1,7 +1,7 @@
 ﻿/// <reference path="../API/jquery-1.10.2.js" />
 /// <reference path="../KeyPress.js" />
 
-QUnit.test("keylogger api behavior", function (assert) {
+test("keylogger api behavior", function (assert) {
 
     var event,
         $doc = $(document),
