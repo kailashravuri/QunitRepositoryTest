@@ -20,7 +20,7 @@
   <target name="CompileAll">
     <echo>Compile solution...</echo>
     <exec program="${devEnvPath}">
-      <arg value="${projectRootPath}\QUnitTestApplication.sln"/>
+      <arg value="${ProjectCodePath}\QUnitTestApplication.sln"/>
       <arg value="/Rebuild"/>
       <arg value="${build.configuration}"/>
     </exec>

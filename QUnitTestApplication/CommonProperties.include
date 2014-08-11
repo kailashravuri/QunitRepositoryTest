@@ -25,7 +25,7 @@
 
   <!-- for build machine, this must be false -->
   <property name="DeveloperMode" value="true" overwrite="false" />
-  <property name="sharedRootPath" value="${projectRootPath}\Shared"/>
+  <property name="ProjectCodePath" value="${projectRootPath}\QUnitTestApplication"/>
 
 
 
