@@ -20,7 +20,7 @@
   <tstamp property="build.date" pattern="yyyyMMdd" verbose="true" />
   <property name="OriginalBuildCounter" value="${build.number}" />
   <property name="NewBuildNumber" value="${majorVersion}.${minorVersion}.${revisionVersion}.${build.date}${build.number}" overwrite="true"/>
-  <echo message="##teamcity[buildNumber '${NewBuildNumber}']"></echo>
+
   <property name="checkoutDir" value="" overwrite="false" />
 
   <!-- for build machine, this must be false -->
@@ -46,13 +46,6 @@
 
   <property name="CPUArchitecture" value="AnyCPU"/>
 
-  <!-- Executing Environment's Configuration settings -->
-  <property name="XConfigPath" value="C:\Development\XCConfigMaster\Rel${majorVersion}.${minorVersion}.${revisionVersion}\XCConfig.xml"></property>
-  <property name="TestSqlServer" value="(local)"/>
-  <property name="TestSqlAdminLogin" value="sa"/>
-  <property name="TestSqlAdminPass" value="Datalabs123"/>
-  <!--<call target="SetExecutingContext"></call>-->
-
   <!-- Log related -->
   <property name="LogDbServer" value="irv-edctfs-901"/>
   <property name="LogDb" value="BuildDb"/>
@@ -64,7 +57,7 @@
   <property name="CDContentPath" value="${CDPath}\${OriginalBuildCounter}"/>
 
   <!-- built in properties-->
-  <!--<property name="nant.onsuccess" value="teardown.success"/>
-  <property name="nant.onfailure" value="teardown.failure"/>-->
+  <property name="nant.onsuccess" value="teardown.success"/>
+  <property name="nant.onfailure" value="teardown.failure"/>
 
 </project>

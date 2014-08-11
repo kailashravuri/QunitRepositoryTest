@@ -11,10 +11,10 @@
       </fileset>
     </setinformationalversion>-->
     <call target="CompileAll" />
-    <call target="Execute Unit Tests"/>
     <call target="QunitTest" />
+    <call target="Execute Unit Tests"/>
     <call target="Cleanup" />
-    
+
     <!--<call target="Copy Files" />
     <call target="Zip" />-->
   </target>
@@ -61,25 +61,27 @@
          this will insure, the previous zip file in sibling folders get removed -->
     <delete>
       <fileset basedir="${CDContentPath}">
-        <include name="\**"/>        
+        <include name="\**"/>
       </fileset>
     </delete>
   </target>
 
   <target name="QunitTest">
     <!-- Run javascript tests -->
-    <exec program="chutzpah.console.exe" basedir="${Build.SourcesDirectory}\Chutzpah.2.0.0\tools"
-          workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">      
+    <exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah"
+          workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">
     </exec>
   </target>
 
-<!--  <target name="Zip">
+  <!--  <target name="Zip">
     <echo>Zipping build files...</echo>
     <zip zipfile="${CDContentPath}\${ZipFileName}" includeemptydirs="true">
       <fileset basedir="${CDContentPath}">
         <include name="\**"/>
-        --><!--<include name="**\Setup.bat"/>
-        <include name="**\Upgrade.bat"/>--><!--
+        -->
+  <!--<include name="**\Setup.bat"/>
+        <include name="**\Upgrade.bat"/>-->
+  <!--
       </fileset>
     </zip>
   </target>
