@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project name="Study Archive Build" default="Main Build">
-  <include buildfile="CommonBuildProperties.include" />
+<project name="Qunit Build" default="Main Build">
+  <include buildfile="CommonProperties.include" />
   <property name="UnitTestResultFilePath" value="C:\UnitTestResults\1.0.${NewBuildNumber}\results.trx"/>
   <property name="msTestPath" value="C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\mstest.exe"/>
   <target name="Main Build">
