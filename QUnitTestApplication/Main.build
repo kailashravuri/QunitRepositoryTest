@@ -11,9 +11,10 @@
       </fileset>
     </setinformationalversion>-->
     <call target="CompileAll" />
-    <call target="Execute Unit Tests"/>    
-    <call target="Cleanup" />
+    <call target="Execute Unit Tests"/>
     <call target="QunitTest" />
+    <call target="Cleanup" />
+    
     <!--<call target="Copy Files" />
     <call target="Zip" />-->
   </target>
@@ -59,7 +60,7 @@
     <!-- from the parent folder down delete everything else
          this will insure, the previous zip file in sibling folders get removed -->
     <delete>
-      <fileset basedir="${CDPath}">
+      <fileset basedir="${CDContentPath}">
         <include name="\**"/>        
       </fileset>
     </delete>
