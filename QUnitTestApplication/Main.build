@@ -70,48 +70,8 @@
     <!-- Run javascript tests -->
     <exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah"
           workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">
+      <arg value="/teamcity" />
+      <arg value="/path ${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
     </exec>
   </target>
-
-  <!--  <target name="Zip">
-    <echo>Zipping build files...</echo>
-    <zip zipfile="${CDContentPath}\${ZipFileName}" includeemptydirs="true">
-      <fileset basedir="${CDContentPath}">
-        <include name="\**"/>
-        -->
-  <!--<include name="**\Setup.bat"/>
-        <include name="**\Upgrade.bat"/>-->
-  <!--
-      </fileset>
-    </zip>
-  </target>
-
-  <target name="Copy Files">
-    <copy todir="${CDContentPath}\Service" includeemptydirs="true" overwrite="true">
-      <fileset basedir="${projectRootPath}\Setup\DataLabs.StudyArchive.Service.Setup\${build.configuration}">
-        <include name="\**"/>
-      </fileset>
-    </copy>
-
-    <copy todir="${CDContentPath}\Web" includeemptydirs="true" overwrite="true">
-      <fileset basedir="${projectRootPath}\Setup\DataLabs.StudyArchive.Setup\${build.configuration}">
-        <include name="\**"/>
-      </fileset>
-    </copy>
-
-    <copy todir="${CDContentPath}\Configurator" includeemptydirs="true" overwrite="true">
-      <fileset basedir="${projectRootPath}\Setup\DataLabs.StudyArchive.UI.Setup\${build.configuration}">
-        <include name="\**"/>
-      </fileset>
-    </copy>
-
-    <copy todir="${CDContentPath}" includeemptydirs="true" overwrite="true">
-      <fileset basedir="${projectRootPath}\Setup\DataLabs.StudyArchive.Setup.Initializer\bin\${build.configuration}">
-        <include name="**\Study Archive Installer.exe"/>
-        <include name="**\WiNewInstanceService.vbs"/>
-        <include name="**\WiNewInstanceWeb.vbs"/>
-      </fileset>
-    </copy>
-  </target>-->
-
 </project>
