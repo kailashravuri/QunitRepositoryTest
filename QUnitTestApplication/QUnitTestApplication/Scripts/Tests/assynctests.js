@@ -1,8 +1,7 @@
-﻿// calling assync function 
-/// <reference path="../Scripts/scope_multiple.js" />
+﻿/// <reference path="../Code/scope_multiple.js" />
+
+// calling assync function
 module('Asynchronous tests :');
-
-
 test('asynchronous failure test', function () {
     setTimeout(function () {
         ok(true);
@@ -13,7 +12,7 @@ asyncTest("asynchronous test: ten seconds later!", function (assert) {
 
     // Asynchronous call to setTimeout Anonymous block
     setTimeout(function () {
-        assert.ok(true, "Passed and ready to resume!");
+        ok(true, "Passed and ready to resume!");
         start();
     }, 8000);
 });

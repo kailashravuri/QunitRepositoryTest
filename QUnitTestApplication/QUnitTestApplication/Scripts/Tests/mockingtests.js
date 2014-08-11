@@ -1,7 +1,5 @@
-﻿/// <reference path="API/jquery-1.10.2.js" />
-/// <reference path="API/jquery.ba-simple-ajax-mocking.js" />
-
-
+﻿/// <reference path="../API/jquery-1.10.2.js" />
+/// <reference path="../API/jquery.ba-simple-ajax-mocking.js" />
 
 // Unit tests.
 module('Mocking Test :')

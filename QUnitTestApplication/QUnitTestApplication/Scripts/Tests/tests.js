@@ -1,5 +1,7 @@
-﻿/// <reference path="../Scripts/code.js" />
-/// <reference path="../Scripts/scope_multiple.js" />
+﻿/// <reference path="../Code/scope_multiple.js" />
+/// <reference path="../Code/code.js" />
+
+
 
 //Test 1
 module('Math functions :');
@@ -14,7 +16,7 @@ test("will add 5 to passed number", function () {
 test("will say even number or not", function () {
     var res = mathLib.isEven(4)
     //expect(2)
-    equal(false, res, "Passed!");
+    equal(true, res, "Passed!");
 
 });
 

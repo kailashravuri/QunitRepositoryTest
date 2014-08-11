@@ -67,14 +67,14 @@
   <ItemGroup>
     <Content Include="Scripts\API\jquery-1.10.2.js" />
     <Content Include="Scripts\API\jquery.ba-simple-ajax-mocking.js" />
-    <Content Include="Scripts\KeyPress.js" />
+    <Content Include="Scripts\Code\KeyPress.js" />
     <Content Include="Scripts\Tests\assynctests.js" />
     <Content Include="Scripts\Tests\KeyPressEventTest.js" />
     <Content Include="Scripts\Tests\markupTest.js" />
     <Content Include="Scripts\Tests\mockingtests.js" />
     <Content Include="Scripts\API\qunit-1.14.0.js" />
-    <Content Include="Scripts\code.js" />
-    <Content Include="Scripts\scope_multiple.js" />
+    <Content Include="Scripts\Code\code.js" />
+    <Content Include="Scripts\Code\scope_multiple.js" />
     <Content Include="Scripts\Tests\tests.js" />
     <Content Include="Styles\qunit-1.14.0.css" />
     <Content Include="TestPage.html" />

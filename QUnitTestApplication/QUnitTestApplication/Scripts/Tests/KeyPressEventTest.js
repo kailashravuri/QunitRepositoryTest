@@ -1,5 +1,6 @@
 ﻿/// <reference path="../API/jquery-1.10.2.js" />
-/// <reference path="../KeyPress.js" />
+/// <reference path="../Code/KeyPress.js" />
+
 
 test("keylogger api behavior", function (assert) {
 
