@@ -79,7 +79,8 @@
   
   <target name="QunitTest" description="execute all javascript unit tests for the solution">
     <tstamp />    
-    <exec program="${chutzpahConsolePath}" workingdir="${jsTests}"/>
+    <exec program="${chutzpahConsolePath}" workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests"/>
+    <arg value="/path ${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
     <arg value="/teamcity" />
     <arg value="/debug" />
     <arg value="/vsoutput" />
