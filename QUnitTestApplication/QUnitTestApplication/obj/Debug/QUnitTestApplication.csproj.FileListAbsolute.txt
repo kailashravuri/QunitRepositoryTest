@@ -4,3 +4,9 @@ c:\users\ravuriv\documents\visual studio 2013\Projects\QUnitTestApplication\QUni
 c:\users\ravuriv\documents\visual studio 2013\Projects\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.csprojResolveAssemblyReference.cache
 c:\users\ravuriv\documents\visual studio 2013\Projects\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.dll
 c:\users\ravuriv\documents\visual studio 2013\Projects\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.pdb
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\bin\QUnitTestApplication.dll.config
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\bin\QUnitTestApplication.dll
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\bin\QUnitTestApplication.pdb
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.csprojResolveAssemblyReference.cache
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.dll
+C:\Users\ravuriv\Documents\Visual Studio 2013\Projects\QunitRepositoryTest\QUnitTestApplication\QUnitTestApplication\obj\Debug\QUnitTestApplication.pdb
