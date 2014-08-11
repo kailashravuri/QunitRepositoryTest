@@ -72,6 +72,8 @@
           workingdir="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests">
       <arg value="/teamcity" />
       <arg value="/path ${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
+      <arg value="/vsoutput" />
+      <arg value="/junit C:/Temp/Results.xml" />
     </exec>
   </target>
 </project>
