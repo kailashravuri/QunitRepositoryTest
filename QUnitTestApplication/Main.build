@@ -70,7 +70,7 @@
     <!--Run javascript tests--> 
     <!--<exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah"
           commandline="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests /vsoutput /teamcity">-->    
-    <exec program="chutzpah.console.exe" basedir="C:\TeamCity\buildAgent\tools\Chutzpah" >
+    <exec program="chutzpah.console.exe" basedir="\\HYD001939\Kailash\Chutzpah" >
       <arg value="${ProjectCodePath}\QUnitTestApplication\Scripts\Tests" />
       <arg value="/vsoutput" />
       <arg value="/teamcity" />    
